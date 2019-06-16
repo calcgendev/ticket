@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background: url(refinery1.jpg);
+  /* linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)), */
+  background-position:center;
+  background-size:cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  opacity: 0.85;
 }
 
 .App-logo {
@@ -7,27 +15,54 @@
   height: 40vmin;
   pointer-events: none;
 }
+html, body, #app, #app>div {
+  height: 100%
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+
+.title {
+  width: 400px;
+  padding: 10px 10px;
+  margin: 200px 0px 15px 0px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  /* box-sizing: border-box; */
+  border:none;
+  font-weight:bold;
+  outline:none;
+  border-bottom:1px solid gray;
+  color:#fff;
+  font-size: 16px;
+  background:transparent;
+  align-content: center;
+}
+.message{
+  width: 400px;
+  padding: 10px 10px;
+  margin:  0px 0px 15px 0px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  /* box-sizing: border-box; */
+  border:none;
+  outline:none;
+  font-weight:bold;
+  border-bottom:1px solid gray;
+  background:transparent;
+  color:#fff;
+  font-size: 16px;
+  align-content: center;
+}
+.submitter{
+  width:426px;
+  background-color: rgb(66, 40, 214);
   color: white;
+  padding: 10px 0px;
+  margin: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight:bold;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
