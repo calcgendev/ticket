@@ -27,7 +27,7 @@ formSubmit = (e) => {
       attachment: this.state.attachment
   }
   
-  axios.post('http://192.168.1.27:4444/send', data)
+  axios.post('http://localhost:4444/send', data)
   .then( res => {
       this.setState({ sent: true }, this.resetForm())
   })
