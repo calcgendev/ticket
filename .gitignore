@@ -11,6 +11,9 @@
 # production
 /build
 
+#secret files
+
+/credentials.tar.gz
 # misc
 .DS_Store
 .env.local
