@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+- v9.6.1
+cache:
+  directories:
+  - node_modules
+script:
+- npm test
+- npm run build
+deploy:
+  skip_cleanup: true
+  keyfile: client-secret.json
+  provider: gae
+  project: vesselbuilder-frontend
+  default: true
+  docker-build: remote
+  on:
+    branches:    # ← new!
+      only:      # ← new!
+        - master # ← new!
+true:
+  branch: master
+services:
+- docker
+before_install:
+- openssl aes-256-cbc -K $encrypted_3921fe90c68f_key -iv $encrypted_3921fe90c68f_iv
+  -in client-secret.json.enc -out client-secret.json -d
+
+email: false
