@@ -22,8 +22,6 @@ true:
   branch: master
 services:
 - docker
-before_install:
-- openssl aes-256-cbc -K $encrypted_3921fe90c68f_key -iv $encrypted_3921fe90c68f_iv
-  -in client-secret.json.enc -out client-secret.json -d
+
 
 email: false
